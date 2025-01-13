@@ -24,16 +24,16 @@ jobs:
       # Step 3: Install dependencies
       - name: Install dependencies
         run: npm install
-        working-directory: my-angular-project # Specify project folder for npm install
+        working-directory: my-portfolio # Specify project folder for npm install
 
       # Step 4: Build the Angular app
       - name: Build Angular app
         run: npm run build -- --output-path=dist/my-portfolio --base-href=/my-portfolio/
-        working-directory: my-angular-project # Specify project folder for the build
+        working-directory: my-portfolio # Specify project folder for the build
 
       # Step 5: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: my-angular-project/dist/my-portfolio
+          folder: my-portfolio/dist/my-portfolio
