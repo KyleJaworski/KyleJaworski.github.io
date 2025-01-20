@@ -17,7 +17,7 @@ interface Job {
 export class TimelineComponent {
   jobHistory: Job[] = [
     {
-      company: 'Case County Government IT',
+      company: 'Cass County Government IT',
       role: 'Help Desk Technician',
       date: new Date(Date.UTC(2020, 5, 1)),
       description:
@@ -42,7 +42,7 @@ export class TimelineComponent {
       role: 'Application Analyst/Developer',
       date: new Date(Date.UTC(2023, 11, 1)),
       description:
-        'Collaborated with clients to analyze and resolve data-related challenges focusing on system integration, automating and reporting',
+        'Collaborated with clients to analyze and resolve data-related challenges focusing on system integration, automating and reporting.',
     },
   ];
 }
