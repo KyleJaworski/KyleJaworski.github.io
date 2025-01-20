@@ -1,10 +1,14 @@
 <div>
-  <app-nav-bar></app-nav-bar>
+  <app-nav-bar *ngIf="1 == true"></app-nav-bar>
   <main class="isolate">
     <!-- Hero section -->
     <app-hero-section></app-hero-section>
 
     <!-- Timeline section -->
     <app-timeline></app-timeline>
+
+    <!-- Tech Skills section -->
+    <app-tech-skills></app-tech-skills>
+    <app-noteable-projects></app-noteable-projects>
   </main>
 </div>

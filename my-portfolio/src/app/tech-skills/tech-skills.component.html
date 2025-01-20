@@ -1,0 +1,35 @@
+<div class="mt-16 rounded-4xl bg-neutral-950 py-20 sm:mt-32 sm:py-32 lg:mt-28">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl lg:max-w-none">
+      <div
+        class="flex items-center gap-x-8"
+        style="opacity: 1; transform: none"
+      >
+        <h2
+          class="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left"
+        >
+          Technologies I've used
+        </h2>
+        <div class="h-px flex-auto bg-neutral-800"></div>
+      </div>
+      <div>
+        <ul
+          role="list"
+          class="mt-10 grid grid-cols-2 gap-x-8 gap-y-10 lg:grid-cols-4"
+        >
+          <li *ngFor="let tech of usedTechnologies">
+            <div
+              *ngIf="tech.icon != null"
+              class="text-white flex items-center space-x-2 h-16"
+              style="opacity: 1; transform: none"
+            >
+              <!-- For icon-based logos -->
+              <i class="{{ tech.icon }}" style="font-size: 4rem"></i>
+              <span>{{ tech.label }}</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
