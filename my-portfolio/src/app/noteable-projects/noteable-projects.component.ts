@@ -12,6 +12,7 @@ export class NoteableProjectsComponent {
   projects = [
     {
       employer: 'NAS',
+      employerSite: 'https://nas-llc.us/',
       projectTitle: 'Oracle WAM 1.9 to 2.3 Upgrade',
       skills: ['ETL', 'Development', 'XPath', 'Javascript'],
       description:
@@ -21,6 +22,7 @@ export class NoteableProjectsComponent {
     },
     {
       employer: 'ASRC Federal',
+      employerSite: 'https://www.asrcfederal.com/',
       projectTitle: 'Permit Scheduling Application',
       skills: ['GitLab', 'Development', 'Agile', 'C#', 'Type Script'],
       description:

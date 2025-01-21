@@ -19,12 +19,21 @@
         >
           <li *ngFor="let tech of usedTechnologies">
             <div
-              *ngIf="tech.icon != null"
+              *ngIf="tech.icon"
               class="text-white flex items-center space-x-2 h-16"
               style="opacity: 1; transform: none"
             >
               <!-- For icon-based logos -->
-              <i class="{{ tech.icon }}" style="font-size: 4rem"></i>
+              <a
+                (mouseover)="tech.currentIcon = tech.hoverIcon || tech.icon"
+                (mouseleave)="tech.currentIcon = tech.icon"
+                [href]="tech.site"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex items-center"
+              >
+                <i [class]="tech.currentIcon" style="font-size: 4rem"></i>
+              </a>
               <span>{{ tech.label }}</span>
             </div>
           </li>

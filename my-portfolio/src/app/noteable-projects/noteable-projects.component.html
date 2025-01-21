@@ -19,28 +19,34 @@
               <time datetime="2020-03-16" class="text-gray-500">
                 {{ project.time }}
               </time>
+
               <a
-                href="#"
+                *ngIf="project.employerSite; else noLink"
+                [href]="project.employerSite"
                 class="relative z-10 rounded-full bg-blue-300 px-3 py-1.5 font-medium text-gray-600 hover:bg-blue-400"
-                >{{ project.employer }}</a
               >
+                {{ project.employer }}
+              </a>
+
+              <ng-template #noLink>
+                <span
+                  class="relative z-10 rounded-full bg-blue-300 px-3 py-1.5 font-medium text-gray-600"
+                >
+                  {{ project.employer }}
+                </span>
+              </ng-template>
               <ng-container *ngFor="let skill of project.skills">
                 <a
-                  href="#"
-                  class="relative z-10 rounded-full bg-gray-100 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-300"
+                  class="relative z-10 rounded-full bg-gray-100 px-3 py-1.5 font-medium text-gray-600"
                   >{{ skill }}</a
                 >
               </ng-container>
             </div>
 
             <div class="group relative max-w-xl">
-              <h3
-                class="mt-3 text-lg/6 font-semibold text-gray-900 group-hover:text-gray-600"
-              >
-                <a href="#">
-                  <span class="absolute inset-0"></span>
-                  {{ project.projectTitle }}
-                </a>
+              <h3 class="mt-3 text-lg/6 font-semibold text-gray-900">
+                <span class="absolute inset-0"></span>
+                {{ project.projectTitle }}
               </h3>
               <p class="mt-5 text-sm/6 text-gray-600">
                 {{ project.description }}
