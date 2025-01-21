@@ -37,7 +37,7 @@ export class NoteableProjectsComponent {
       description:
         'This personal project leverages MongoDB, Angular, and Tailwind CSS, to create a CRM tool inspired by a friend’s business needs, helping manage customers, schedules, and sales. Through this project, I am also becoming more familiar with GitHub workflows and GitHub Actions while enhancing my technical skills.',
       time: '2025 - Current',
-      img: 'assets/CRM_dashboard.png',
+      img: 'assets/images/CRM_dashboard.png',
     },
   ];
 }
