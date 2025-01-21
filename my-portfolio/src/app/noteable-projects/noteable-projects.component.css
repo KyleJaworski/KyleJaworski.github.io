@@ -1,0 +1,30 @@
+::ng-deep .p-image-toolbar {
+  display: none !important;
+}
+
+/* Target the image wrapper */
+::ng-deep .p-image {
+  position: relative;
+  display: inline-block;
+  overflow: hidden; /* Ensure overlay stays within bounds */
+}
+
+/* Grey-out overlay */
+::ng-deep .p-image-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent black */
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease; /* Smooth transition on hover */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Show grey-out effect on hover */
+::ng-deep .p-image:hover .p-image-mask {
+  opacity: 1; /* Fully visible on hover */
+}

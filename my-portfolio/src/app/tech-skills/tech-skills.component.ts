@@ -58,6 +58,10 @@ export class TechSkillsComponent {
       label: 'Github',
     },
     {
+      icon: 'devicon-tailwindcss-original',
+      label: 'TailwindCSS',
+    },
+    {
       icon: 'devicon-csharp-plain',
       label: '',
     },
