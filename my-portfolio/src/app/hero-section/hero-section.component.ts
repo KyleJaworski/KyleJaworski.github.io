@@ -9,21 +9,6 @@ import { Component, OnInit } from '@angular/core';
 export class HeroSectionComponent implements OnInit {
   heroImage: string = '';
 
-  imageToDisplay(): string {
-    const randomNum: Number = Math.floor(Math.random() * (3 - 1 + 1)) + 1;
-
-    switch (randomNum) {
-      case 1:
-        return 'assets/images/hero_image.jpg';
-      case 2:
-        return 'assets/images/hero_image_2.jpg';
-      case 3:
-        return 'assets/images/hero_image_3.jpg';
-      default:
-        return 'assets/images/hero_image.jpg';
-    }
-  }
-
   ngOnInit(): void {
     const randomNum: Number = Math.floor(Math.random() * (3 - 1 + 1)) + 1;
 
