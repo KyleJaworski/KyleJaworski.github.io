@@ -21,8 +21,8 @@
               </time>
 
               <a
-                *ngIf="project.employerSite; else noLink"
-                [href]="project.employerSite"
+                *ngIf="project.url; else noLink"
+                [href]="project.url"
                 class="relative z-10 rounded-full bg-blue-300 px-3 py-1.5 font-medium text-gray-600 hover:bg-blue-400"
               >
                 {{ project.employer }}

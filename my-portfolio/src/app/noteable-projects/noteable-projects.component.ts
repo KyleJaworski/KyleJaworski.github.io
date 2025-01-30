@@ -12,7 +12,7 @@ export class NoteableProjectsComponent {
   projects = [
     {
       employer: 'NAS',
-      employerSite: 'https://nas-llc.us/',
+      url: 'https://nas-llc.us/',
       projectTitle: 'Oracle WAM 1.9 to 2.3 Upgrade',
       skills: ['ETL', 'XPath', 'Javascript', 'PL/SQL', 'API', 'BI Publisher'],
       description:
@@ -22,7 +22,7 @@ export class NoteableProjectsComponent {
     },
     {
       employer: 'ASRC Federal',
-      employerSite: 'https://www.asrcfederal.com/',
+      url: 'https://www.asrcfederal.com/',
       projectTitle: 'Permit Scheduling Application',
       skills: ['GitLab', 'Agile', 'C#', 'Type Script'],
       description:
@@ -32,7 +32,7 @@ export class NoteableProjectsComponent {
     },
     {
       employer: 'Personal Project',
-      projectTitle: 'CRM Tool',
+      url: 'canopy.kylejaworski.dev',
       skills: ['Typescript', 'MongoDB', 'Angular', 'TailwindCSS', 'Github'],
       description:
         'This personal project leverages MongoDB, Angular, and Tailwind CSS, to create a CRM tool inspired by a friend’s business needs, helping manage customers, schedules, and sales. Through this project, I am also becoming more familiar with GitHub workflows and GitHub Actions while enhancing my technical skills.',
