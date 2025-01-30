@@ -23,16 +23,18 @@
               <a
                 *ngIf="project.url; else noLink"
                 [href]="project.url"
+                target="_blank"
+                rel="noopener noreferrer"
                 class="relative z-10 rounded-full bg-blue-300 px-3 py-1.5 font-medium text-gray-600 hover:bg-blue-400"
               >
-                {{ project.employer }}
+                {{ project.affiliation }}
               </a>
 
               <ng-template #noLink>
                 <span
                   class="relative z-10 rounded-full bg-blue-300 px-3 py-1.5 font-medium text-gray-600"
                 >
-                  {{ project.employer }}
+                  {{ project.affiliation }}
                 </span>
               </ng-template>
               <ng-container *ngFor="let skill of project.skills">

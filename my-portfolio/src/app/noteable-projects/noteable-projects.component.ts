@@ -2,6 +2,11 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ImageModule } from 'primeng/image';
 
+enum Affiliation {
+  Employer = 'Employer',
+  Personal = 'Personal Project',
+}
+
 @Component({
   selector: 'app-noteable-projects',
   imports: [CommonModule, ImageModule],
@@ -11,7 +16,7 @@ import { ImageModule } from 'primeng/image';
 export class NoteableProjectsComponent {
   projects = [
     {
-      employer: 'NAS',
+      affiliation: 'NAS',
       url: 'https://nas-llc.us/',
       projectTitle: 'Oracle WAM 1.9 to 2.3 Upgrade',
       skills: ['ETL', 'XPath', 'Javascript', 'PL/SQL', 'API', 'BI Publisher'],
@@ -21,7 +26,7 @@ export class NoteableProjectsComponent {
       img: '',
     },
     {
-      employer: 'ASRC Federal',
+      affiliation: 'ASRC Federal',
       url: 'https://www.asrcfederal.com/',
       projectTitle: 'Permit Scheduling Application',
       skills: ['GitLab', 'Agile', 'C#', 'Type Script'],
@@ -31,11 +36,12 @@ export class NoteableProjectsComponent {
       img: '',
     },
     {
-      employer: 'Personal Project',
-      url: 'canopy.kylejaworski.dev',
+      affiliation: 'Personal Project',
+      url: 'https://canopy.kylejaworski.dev/',
+      projectTitle: 'Canopy - CRM',
       skills: ['Typescript', 'MongoDB', 'Angular', 'TailwindCSS', 'Github'],
       description:
-        'This personal project leverages MongoDB, Angular, and Tailwind CSS, to create a CRM tool inspired by a friend’s business needs, helping manage customers, schedules, and sales. Through this project, I am also becoming more familiar with GitHub workflows and GitHub Actions while enhancing my technical skills.',
+        'This personal project is in development and leverages MongoDB, Angular, and Tailwind CSS, to create a CRM tool inspired by a friend’s business needs, helping manage customers, schedules, and sales. Through this project, I am also becoming more familiar with GitHub workflows and GitHub Actions while enhancing my technical skills.',
       time: '2025 - Current',
       img: 'assets/images/CRM_dashboard.png',
     },
