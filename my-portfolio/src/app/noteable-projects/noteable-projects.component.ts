@@ -42,8 +42,18 @@ export class NoteableProjectsComponent {
       skills: ['Typescript', 'MongoDB', 'Angular', 'TailwindCSS', 'Github'],
       description:
         'This personal project is in development and leverages MongoDB, Angular, and Tailwind CSS, to create a CRM tool inspired by a friend’s business needs, helping manage customers, schedules, and sales. Through this project, I am also becoming more familiar with GitHub workflows and GitHub Actions while enhancing my technical skills.',
-      time: '2025 - Current',
+      time: 'In Progress',
       img: 'assets/images/CRM_dashboard.png',
+    },
+    {
+      affiliation: 'Client Project',
+      url: 'https://KyleJaworski.github.io/FatedCuts',
+      projectTitle: 'Fated Cuts - Client Site',
+      skills: ['Typescript', 'React', 'Next.JS', 'TailwindCSS', 'Github'],
+      description:
+        'Custom web site to help establish a clients online presence. Allows their existing and new clientel to book via a booksy widget popup. Planned development includes custom booksy integration to allow for a more unified look and better user eperience. ',
+      time: 'In Progress',
+      img: '',
     },
   ];
 }
