@@ -44,12 +44,14 @@ export class TimelineComponent {
       description:
         'Supported Oracle Utilities application by implementing/maintaining business logic, data integration, data quality and report generation.',
     },
-    {
-      company: 'Cass County Government IT',
-      role: 'Help Desk Technician',
-      date: new Date(Date.UTC(2020, 5, 1)),
-      description:
-        'Provided technical support to users through the help desk ticketing system, troubleshooting and resolving issues efficiently.',
-    },
+    //,
+    //
+    //{
+    // company: 'Cass County Government IT',
+    // role: 'Help Desk Technician',
+    // date: new Date(Date.UTC(2020, 5, 1)),
+    // description:
+    //  'Provided technical support to users through the help desk ticketing system, troubleshooting and resolving issues efficiently.',
+    //}
   ];
 }
