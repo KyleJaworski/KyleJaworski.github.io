@@ -17,6 +17,13 @@ interface Job {
 export class TimelineComponent {
   jobHistory: Job[] = [
     {
+      company: 'BreakPoint Labs',
+      role: 'Software Developer',
+      date: new Date(Date.UTC(2025, 31, 3)),
+      description:
+        'Worked on the DREN Subscribers portal with a small team of engineers',
+    },
+    {
       company: 'Woolpert',
       role: 'Application Analyst/Developer',
       date: new Date(Date.UTC(2023, 11, 1)),
