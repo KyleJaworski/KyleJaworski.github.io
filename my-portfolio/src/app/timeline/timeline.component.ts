@@ -19,7 +19,7 @@ export class TimelineComponent {
     {
       company: 'BreakPoint Labs',
       role: 'Software Developer',
-      date: new Date(Date.UTC(2025, 31, 3)),
+      date: new Date(Date.UTC(2025, 3, 1)),
       description:
         'Worked on the DREN Subscribers portal with a small team of engineers',
     },
