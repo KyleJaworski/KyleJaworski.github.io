@@ -112,5 +112,12 @@ export class TechSkillsComponent {
       label: '',
       site: 'https://learn.microsoft.com/en-us/dotnet/csharp/',
     },
+    {
+      currentIcon: 'devicon-rails-plain-wordmark',
+      icon: 'devicon-rails-plain-wordmark',
+      hoverIcon: 'devicon-rails-plain-wordmark colored',
+      label: '',
+      site: 'https://rubyonrails.org',
+    },
   ];
 }
