@@ -50,8 +50,18 @@ export class NoteableProjectsComponent {
       url: 'https://KyleJaworski.github.io/FatedCuts',
       projectTitle: 'Fated Cuts - Client Site',
       skills: ['Typescript', 'React', 'Next.JS', 'TailwindCSS', 'Github'],
+      description: 
+        'Custom web site to help establish a clients online presence. Allows their existing and new clientel to book via a booksy widget popup. Planned development includes custom booksy integration to allow for a more unified look and better user eperience.',
+      time: 'In Progress',
+      img: '',
+    },
+    {
+      affiliation: 'BreakPoint labs',
+      url: 'https://breakpoint-labs.com',
+      projectTitle: 'Redmine Plugin',
+      skills: ['Ruby','Rails','Stimulus'],
       description:
-        'Custom web site to help establish a clients online presence. Allows their existing and new clientel to book via a booksy widget popup. Planned development includes custom booksy integration to allow for a more unified look and better user eperience. ',
+        'Custom plugin to expand core Redmine as the users needs grow',
       time: 'In Progress',
       img: '',
     },
